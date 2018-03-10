@@ -261,6 +261,9 @@ class AVLDict:
 
     def __str__(self):
         return str(self.items())
+    
+#*******************************************************************************************************************************
+    #implement this function:
     def ith_key(self, index: int):
         """
         Returns the key that would be at the given index in the sorted list of all keys of the tree.
@@ -268,7 +271,7 @@ class AVLDict:
         Running time: O(log n) where the tree has n items.
         """
         pass
-
+#*****************************************************************************************************************
 
 if __name__ == "__main__":
     tree = AVLDict()
@@ -281,9 +284,4 @@ if __name__ == "__main__":
 
     print(tree.items())
 
-    bstviz.bstviz(tree, padding=0.7).render(view=True)
 
-    while tree:
-        key = int(input("Enter a key to delete: "))
-        del tree[key]
-        bstviz.bstviz(tree, padding=0.7).render(view=True)
