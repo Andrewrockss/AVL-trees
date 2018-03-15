@@ -105,7 +105,7 @@ class AVLDict:
         self._find_and_fix(key)
 
     def get(self, key):
-"
+        
         node, _ = self._find(key)
         if node.key is None:
             return None
